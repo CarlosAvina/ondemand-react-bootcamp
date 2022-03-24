@@ -5,7 +5,7 @@ const SearchIcon = (props) => (
     height={68}
     viewBox="0 0 24 24"
     fill="none"
-    stroke="#000"
+    stroke="white"
     strokeWidth={2.5}
     strokeLinecap="round"
     strokeLinejoin="round"

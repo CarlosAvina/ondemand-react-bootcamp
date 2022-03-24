@@ -6,7 +6,7 @@ import { CartIcon } from "../../icons";
 
 const Wrapper = styled.header`
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
 `;
