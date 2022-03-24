@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useFeaturedBanners } from "./utils/hooks/useFeaturedBanners";
 
-import Header from "./components/Header/Header";
+import Header from "./components/Header";
 
 const Wrapper = styled.div`
   display: grid;
