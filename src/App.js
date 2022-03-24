@@ -1,28 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import { useFeaturedBanners } from './utils/hooks/useFeaturedBanners';
+import styled from "styled-components";
+import { useFeaturedBanners } from "./utils/hooks/useFeaturedBanners";
+
+import Header from "./components/Header/Header";
+
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  .header {
+    grid-column: 1 / -1;
+  }
+`;
 
 function App() {
   const { data, isLoading } = useFeaturedBanners();
   console.log(data, isLoading);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Header className="header" />
+    </Wrapper>
   );
 }
 
